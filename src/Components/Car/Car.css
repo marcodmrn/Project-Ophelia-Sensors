@@ -1,0 +1,7 @@
+.car {
+  border: solid black 2px;
+}
+
+.car_more {
+  display: flex;
+}
