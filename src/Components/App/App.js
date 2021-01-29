@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 // import { getCarsData } from "../../service/service";
 import response from "../../data.json";
 import Car from "../Car/Car";
+import Header from "../Header/Header";
 
 function App() {
   const [data, setData] = useState([]);
@@ -15,6 +16,7 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
       {data.map((car) => (
         <Car data={car} />
       ))}

@@ -1,7 +1,9 @@
 .car {
   border: solid black 2px;
+  display: grid;
 }
 
-.car_more {
-  display: flex;
+.button_desc {
+  border: none;
+  background-color: #fff;
 }
