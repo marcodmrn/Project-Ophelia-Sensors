@@ -42,3 +42,25 @@
   border: 1px solid #152e38;
   padding: 6px 12px;
 }
+
+/* @media (max-width: 800px) {
+} */
+
+@media (max-width: 900px) {
+  .car {
+    width: 75%;
+  }
+  .car_name {
+    font-size: 30px;
+  }
+
+  .car_desc {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .car {
+    width: 100%;
+  }
+}

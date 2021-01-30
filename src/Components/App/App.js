@@ -23,9 +23,9 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div className="container_cars">
+      <div className="container">
         <Title />
-        <Masonry options={masonryOptions}>
+        <Masonry className="container_cars" options={masonryOptions}>
           {data.map((car, i) => (
             <Car data={car} key={i} />
           ))}

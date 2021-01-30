@@ -1,7 +1,6 @@
 import "./Car.css";
 import { useState } from "react";
 import Characteristics from "../Characteristics/Characteristics";
-// import { closePop } from "../Characteristics/Characteristics";
 function Car({ data }) {
   const [show, setShow] = useState(false);
 
