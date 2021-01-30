@@ -1,9 +1,44 @@
 .car {
-  border: solid black 2px;
-  display: grid;
+  width: 45%;
+  padding: 20px;
 }
 
-.button_desc {
-  border: none;
-  background-color: #fff;
+.car_name {
+  margin-top: 0;
+  text-align: center;
+}
+
+.car_img {
+  width: 100%;
+}
+
+.car_img img {
+  width: 100%;
+}
+
+.car_content {
+  padding: 20px;
+  box-shadow: 0px -6px 76px rgb(59 82 85 / 20%);
+  position: relative;
+}
+
+.car_name {
+  color: #1c3d4a;
+}
+
+.car_desc h4 {
+  margin-bottom: 10px;
+}
+
+.car_desc p {
+  line-height: 1.5;
+  margin-top: 0;
+}
+.car_button {
+  color: #ffffff;
+  background-color: #1c3d4a;
+  border-radius: 0;
+  text-align: center;
+  border: 1px solid #152e38;
+  padding: 6px 12px;
 }

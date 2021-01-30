@@ -1,9 +1,24 @@
 import "./Characteristics.css";
+import { useState, useEffect } from "react";
+import response from "../../data.json";
 
-function Characteristics({ data }) {
+function Characteristics({ data, togglePopup }) {
+  const [car, setCar] = useState([]);
+
+  useEffect(() => {
+    /* getCarsData().then((res) => {
+      setData(res);
+    }); */
+    setCar(response);
+  }, [setCar]);
+
   return (
-    <div className="characteristics">
-      <div className="more_characteristics">
+    <div class="characteristics_popup">
+      <button className="characteristics_button" onClick={() => togglePopup()}>
+        X
+      </button>
+      <div className="characteristics_content">
+        <h3> Fiche Technique </h3>
         <ul>
           <li>Marque: {data.marque}</li>
           <li>Classe : {data.classe}</li>
@@ -14,10 +29,6 @@ function Characteristics({ data }) {
           <li>Carrosserie : {data["carrosserie-s"]}</li>
           <li>Puissance : {data["puissance-maximale"]}</li>
           <li>{data.acceleration}</li>
-        </ul>
-      </div>
-      <div className="more_characteristics">
-        <ul>
           <li>Année de production : {data["annees-de-production"]}</li>
           <li>Usine d'assemblage : {data["usine-s-dassemblage"]}</li>
           <li>Production : {data.production}</li>
