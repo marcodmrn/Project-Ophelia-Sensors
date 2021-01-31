@@ -34,6 +34,7 @@
   line-height: 1.5;
   margin-top: 0;
 }
+
 .car_button {
   color: #ffffff;
   background-color: #1c3d4a;
@@ -41,6 +42,31 @@
   text-align: center;
   border: 1px solid #152e38;
   padding: 6px 12px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.car_button:focus {
+  outline: none;
+}
+
+.car_button::before {
+  content: "En savoir plus";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  color: #1c3d4a;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+  padding-top: 6px;
+}
+
+.car_button:hover::before {
+  transform: translateY(0);
 }
 
 /* @media (max-width: 800px) {
@@ -48,7 +74,7 @@
 
 @media (max-width: 900px) {
   .car {
-    width: 75%;
+    width: 100%;
   }
   .car_name {
     font-size: 30px;
@@ -56,11 +82,5 @@
 
   .car_desc {
     font-size: 16px;
-  }
-}
-
-@media (max-width: 600px) {
-  .car {
-    width: 100%;
   }
 }

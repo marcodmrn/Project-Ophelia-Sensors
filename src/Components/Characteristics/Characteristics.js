@@ -1,7 +1,6 @@
 import "./Characteristics.css";
 
 function Characteristics({ data, togglePopup }) {
-  console.log(data.keys);
   return (
     <div className="characteristics_popup">
       <button className="characteristics_button" onClick={() => togglePopup()}>
