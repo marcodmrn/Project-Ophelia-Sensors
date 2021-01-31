@@ -1,4 +1,4 @@
-# Projet Ophelia Sensors
+# Projet Ophelia Sensors de Marco DE AMORIN
 
 
 ## Installation des dépendences
